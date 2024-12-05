@@ -1,0 +1,73 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "Name": "Disha Dhingra",
+      "Rollno": 1,
+      "DOB": "1991-11-11",
+      "Score": 500
+    },
+    {
+      "id": 2,
+      "Name": "Danish Pasha",
+      "Rollno": 2,
+      "DOB": "1999-11-30",
+      "Score": 500
+    },
+    {
+      "id": 3,
+      "Name": "Vaibhav Jain",
+      "Rollno": 3,
+      "DOB": "2022-12-21",
+      "Score": 450
+    },
+    {
+      "id": 4,
+      "Name": "Arunkumar Biradar",
+      "Rollno": 4,
+      "DOB": "1999-11-08",
+      "Score": 450
+    },
+    {
+      "id": 5,
+      "Name": "Ishu Sethia ",
+      "Rollno": 5,
+      "DOB": "2000-08-09",
+      "Score": 300
+    },
+    {
+      "id": 7,
+      "Name": "Shruti Jain",
+      "Rollno": 7,
+      "DOB": "2000-10-30",
+      "Score": 498
+    }
+  ],
+  "signup": [
+    {
+      "Name": "Disha Dhingra",
+      "Email": "dishadhingra@gmail.com",
+      "Mobileno": "8767654876",
+      "Password": "Disha@123",
+      "id": 1
+    },
+    {
+      "Name": "Danish Pasha",
+      "Email": "danishpasha@gmail.com",
+      "Mobileno": "7638338398",
+      "Password": "Danish@123",
+      "id": 2
+    },
+    {
+      "Name": "Suraj",
+      "Email": "suraj@gmail.com",
+      "Mobileno": "5678987654",
+      "Password": "Suraj@123",
+      "id": 3
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}

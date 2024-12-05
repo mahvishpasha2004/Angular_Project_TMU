@@ -1,0 +1,75 @@
+<nav class=" bg-dark">
+  <div class="container-fluid">
+      <div class="shifting">
+      <h2 style="color:coral ;">Result Management Application</h2>
+  </div>
+      <div class="d-flex">
+        
+      </div>
+  </div>
+</nav>
+
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+                <div class="text-center">
+                    <h1>Teacher SignUp</h1>
+                    <h3>Get Free Membership </h3>
+                    <p style="color:red; font-family:cursive; padding-right:2.98in;">* fields are mandatory</p>
+                    <hr />
+                </div>
+
+                
+
+                    <form [formGroup]="signupForm" (ngSubmit)="signUp()">
+
+
+                        <div class="mb-3">
+                          <label class="form-label">Name <span class="star"> * </span> </label>
+                          <input formControlName="Name" placeholder="Enter name" type="email" class="form-control" id="exampleName" required aria-describedby="emailHelp">
+                          <small *ngIf="signupForm.get('Name')?.hasError('required') && signupForm.get('Name')?.invalid && signupForm.get('Name')?.touched" class="text-danger">Name is required</small>
+                          <small *ngIf="signupForm.get('Name')?.hasError('minlength') && signupForm.get('Name')?.invalid && signupForm.get('Name')?.touched" class="text-danger">Name should be greater then 5 characters</small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Mobile Number <span class="star"> * </span> </label>
+                            <input formControlName="Mobileno"placeholder="Enter Mobile Number" type="text" class="form-control" id="exampleMobileno" required aria-describedby="emailHelp">
+                            <small *ngIf="signupForm.get('Mobileno')?.hasError('required') && signupForm.get('Mobileno')?.invalid && signupForm.get('Mobileno')?.touched" class="text-danger">Mobile Number is required</small>
+                            <small *ngIf="signupForm.get('Mobileno')?.hasError('minlength') && signupForm.get('Mobileno')?.invalid && signupForm.get('Mobileno')?.touched" class="text-danger">Mobile Number should be of 10 digit</small>
+                            <small *ngIf="signupForm.get('Mobileno')?.hasError('maxlength') && signupForm.get('Mobileno')?.invalid && signupForm.get('Mobileno')?.touched" class="text-danger">Mobile Number should be of 10 digit</small>
+                          </div>
+
+                          <div class="mb-3">
+                            <label class="form-label">Email <span class="star"> * </span> </label>
+                            <input formControlName="Email" placeholder="Enter Email" type="email" class="form-control" id="exampleEmail" required aria-describedby="emailHelp">
+                            <span style="color:red ;"
+                            *ngIf="  signupForm.get('Email')?.hasError('required')&& signupForm.get('Email')?.touched && signupForm.get('Email')?.invalid">The
+                            Email is required</span>
+  
+                            <span style="color:red ;"
+                            *ngIf=" signupForm.get('Email')?.hasError('pattern')&& signupForm.get('Email')?.touched && signupForm.get('Email')?.invalid">The
+                            Email should be valid</span>
+                          </div>
+
+                         
+                        <div class="mb-3">
+                          <label class="form-label">Password <span class="star"> * </span> </label>
+                          <input formControlName="Password" placeholder="Enter Password" type="password" required class="form-control" id="exampleInputPassword1"> 
+
+                          <small *ngIf="signupForm.get('Password')?.hasError('required') && signupForm.get('Password')?.invalid && signupForm.get('Password')?.touched" class="text-danger">Password is required</small>
+                          <small *ngIf="signupForm.get('Password')?.hasError('pattern') && signupForm.get('Password')?.invalid && signupForm.get('Password')?.touched" class="text-danger">Password should contain 1 Uppercase , Lowercase and 1 special character.</small>                        
+                        </div>
+                       
+                        <button type="submit" [disabled]="!signupForm.valid" class="btn btn-primary">Signup</button>
+                    </form>
+                    <a type="text" routerLink="/login"> Already a Member ?! Click to Login !. </a>
+
+
+            </div>
+        </div>
+    </div>
+</div>

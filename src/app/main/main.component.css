@@ -1,0 +1,29 @@
+.card
+{
+    margin-top: 95px;
+    border:7px solid black;
+    width:550px;
+    padding: 55px;
+    position: absolute;
+    top:10%;
+    left:30%
+}
+
+.btn btn-info
+{
+    color:blue
+}
+.hello
+{
+    color:aquamarine
+}
+
+*
+{
+    font-family:cursive;
+}
+.shifting
+{
+    text-align: center;
+    padding-top: 20px;
+}
